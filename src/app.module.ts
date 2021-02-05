@@ -9,9 +9,10 @@ import { AppService } from './app.service';
 
 // Module
 import { UrbanfarmersModule } from './urbanfarmers/urbanfarmers.module';
+import { ProductsModule } from './products/products.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), UrbanfarmersModule],
+  imports: [TypeOrmModule.forRoot(), UrbanfarmersModule, ProductsModule],
   controllers: [AppController],
   providers: [AppService],
 })
